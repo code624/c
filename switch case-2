@@ -1,0 +1,35 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int main() {
+int balance=1000;
+int D;
+int w;
+int choice;
+while(1){
+    printf("1.Check Balance\n2.Deposit Money\n3.Withdraw Money\n4.Exit");
+    printf("\n\nchoose one option: ");
+    scanf("%d",&choice);
+    switch(choice){
+        case 1:
+        printf("Balance %d\n",balance);
+        break;
+        case 2:
+        printf("enter the amount you want to deposit ");
+        scanf("%d",&D);
+        balance=balance+D;
+        printf("deposit done\n\n");
+        break;
+        case 3:
+        printf("enter the amount you want to withdraw ");
+        scanf("%d",&w);
+        balance=balance-w;
+        printf("withdraw successfull\n");
+        break;
+        case 4:
+        printf("exit\n");
+        return 0;
+        
+    }
+}
+    return 0;
+}
